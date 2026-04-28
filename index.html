@@ -214,6 +214,7 @@
         function downloadVCF() {
             const vcard = `BEGIN:VCARD
 VERSION:3.0
+N:Zweibel;Zachary;;;
 FN:${userData.name}
 ORG:Warner Bros. Discovery
 TITLE:Broadcast IT Engineer
@@ -221,7 +222,7 @@ EMAIL;TYPE=INTERNET:${userData.email}
 TEL;TYPE=CELL:${userData.phone}
 URL:${userData.linkedin}
 PHOTO;VALUE=URL:${userData.photo}
-NOTE:Hofstra University Alum '18 - BS in Video/Television & Film. Supporting CNN, Food Network, TNT, and Bleacher Report live productions at 30 Hudson Yards.
+NOTE:Hofstra University Alum '18 - BS in Video/Television & Film. Supporting WBD productions in NYC.
 END:VCARD`;
 
             const blob = new Blob([vcard], { type: 'text/vcard' });
